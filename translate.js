@@ -31,4 +31,6 @@ function Translate(languages, defaultLanguage)
             e.innerHTML = translations[e.dataset.translate]
         }
     })
+
+    document.querySelector("html").setAttribute("lang", navigator.language.substr(0,2))
 }
