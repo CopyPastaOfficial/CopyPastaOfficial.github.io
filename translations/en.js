@@ -26,5 +26,5 @@ var en = {
 
     about_content: "We are two french developpers.",
 
-    footer: "This website is hosted by <a href=\"https://github.com\">Github</a>. The template and icons used in this website made by <a href=\"https://getbootstrap.com\">Bootstrap</a>."
+    footer: "This website is hosted by <a href=\"https://github.com\">Github</a>. The template and icons used in this website made by <a href=\"https://getbootstrap.com\">Bootstrap</a>. Google Play and the Google Play logo are trademarks of Google LLC."
 }

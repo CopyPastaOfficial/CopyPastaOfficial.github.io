@@ -121,7 +121,7 @@
                 </div>
                 <div class="col-md-6 mt-4">
                     <p class="text-center" data-translate="download_android_title"></p>
-                    <a href="https://play.google.com/store/apps/details?id=fr.unrealsoftwares.copypasta&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img height="70px" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' /></a>
+                    <a id="link-android-download" href="https://play.google.com/store/apps/details?id=fr.unrealsoftwares.copypasta&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img height="70px" id="google-play" alt='Get it on Google Play' /></a>
                 </div>
             </div>
         </div>
@@ -168,6 +168,8 @@
                 trans: de
             }
         ], "en")
+
+        document.getElementById("google-play").setAttribute("src","https://play.google.com/intl/" + navigator.language.replace("-","_") +"/badges/static/images/badges/" + navigator.language.substr(0,2) + "_badge_web_generic.png")
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

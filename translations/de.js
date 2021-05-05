@@ -27,6 +27,6 @@ var de = {
 
     about_content: "Wir sind zwei französische Entwickler.",
 
-    footer: "Diese Seite wird von <a href=\"https://github.com\">Github</a> betrieben. Das Thema und die verwendeten Ikonen auf dieser Website wurden von <a href=\"https://getbootstrap.com\">Bootstrap</a> erstellt."
+    footer: "Diese Seite wird von <a href=\"https://github.com\">Github</a> betrieben. Das Thema und die verwendeten Ikonen auf dieser Website wurden von <a href=\"https://getbootstrap.com\">Bootstrap</a> erstellt. Google Play und das Google Play-Logo sind Marken von Google LLC."
 
 }

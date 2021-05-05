@@ -27,6 +27,6 @@ var es = {
 
     about_content: "Somos dos desarrolladores franceses.",
 
-    footer: "Este sitio está alojado en <a href=\"https://github.com\">Github</a>. El tema y los iconos utilizados en este sitio fueron creados por <a href=\"https://getbootstrap.com\">Bootstrap</a>."
+    footer: "Este sitio está alojado en <a href=\"https://github.com\">Github</a>. El tema y los iconos utilizados en este sitio fueron creados por <a href=\"https://getbootstrap.com\">Bootstrap</a>. Google Play y el logotipo de Google Play son marcas comerciales de Google LLC."
 
 }

@@ -27,6 +27,6 @@ var fr = {
 
     about_content: "Nous sommes deux développeurs français.",
 
-    footer: "Ce site est hebergé par <a href=\"https://github.com\">Github</a>. Le thème et les icones utilisés sur ce site ont été fait par <a href=\"https://getbootstrap.com\">Bootstrap</a>."
+    footer: "Ce site est hebergé par <a href=\"https://github.com\">Github</a>. Le thème et les icones utilisés sur ce site ont été fait par <a href=\"https://getbootstrap.com\">Bootstrap</a>. Google Play et le logo Google Play sont des marques de Google LLC."
 
 }
