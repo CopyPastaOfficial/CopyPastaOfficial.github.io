@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CopyPasta</title>
+    <title translate="no">CopyPasta</title>
     <link rel="shortcut icon" href="logo.svg">
     <meta name="google-site-verification" content="4iMNP_N4C7_p6-xKJSRgZgSIWGVcoyW2QBUjN7qwMBk" />
     <meta name="theme-color" content="#009c74">
     <meta name="description" content="CopyPasta is a project that allows you to scan a text or an image (QR Code, Barcode, Text recognition, ...) with your phone, and send it to your computer.">
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
 </head>
 
 
@@ -21,30 +22,41 @@
         <!--NAVBAR-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary" style="z-index: 9999">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="#" translate="no">
                     <img src="logo.svg" height="25px" alt="" class="d-inline-block align-text-top"> CopyPasta
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
+                    <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#"><i class="bi bi-house-door-fill"></i> <span data-translate="home"></span></a>
+                            <a class="nav-link active" href="#"><i class="bi bi-house-door-fill"></i>Acceuil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#features"><i class="bi bi-gear"></i> <span data-translate="features"></span></a>
+                            <a class="nav-link active" href="#features"><i class="bi bi-gear"></i>Fonctionnalités</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#howtouse"><i class="bi bi-question-circle"></i> <span data-translate="how_to_use"></span></a>
+                            <a class="nav-link active" href="#howtouse"><i class="bi bi-question-circle"></i>Comment ça marche ?</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#download"><i class="bi bi-download"></i> <span data-translate="download"></span></a>
+                            <a class="nav-link active" href="#screenshots"><i class="bi bi-images"></i>Captures d'écran</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#about"><i class="bi bi-info-circle"></i> <span data-translate="about"></span></a>
-                        </li>
+                            <a class="nav-link active" href="#about"><i class="bi bi-info-circle"></i>À propos</a>
+                        </li>  
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-globe"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end p-4" aria-labelledby="navbarDropdown">
+                                <div id="google_translate_element"></div>
+                            </div>
+                          </li>              
                     </ul>
+                    <div class="d-flex">
+                        <a href="" class="btn btn-dark"><i class="bi bi-download"></i>Télécharger</a>
+                    </div>                    
                 </div>
             </div>
         </nav>
@@ -55,11 +67,14 @@
             <div>
                 <img src="logo.svg" width="100px" alt="">
             </div>
-            <h1><span data-translate="welcome"></span></h1>
-            <p><span data-translate="welcome_description"></span></p>
+            <h1>Bienvenue sur <div translate="no">CopyPasta</div></h1>                        
+            
+
+            <p><b>CopyPasta</b> est un outils qui vous permet de <b>scanner un texte ou une image</b> (QR Code, Code Barre, Reconnaissance de texte, ...) avec votre téléphone et <b>d'envoyer le scan à votre ordinateur</b>. CopyPasta vous permet aussi <b>d'envoyer n'importe quel type de fichiers</b> de votre téléphone vers votre ordinateur.</p>
             <div>
-                <a href="#features" class="btn btn-outline-dark"><i class="bi bi-three-dots"></i> <span data-translate="more"></span></a>
-                <a href="#download" class="btn btn-dark"><i class="bi bi-download"></i> <span data-translate="download"></span></a>
+                <a href="#features" class="btn btn-outline-dark"><i class="bi bi-three-dots"></i>En savoir plus</a>
+                <a href="#download" class="btn btn-dark"><i class="bi bi-download"></i>Télécharger</a>
+            
             </div>
 
         </section>
@@ -69,27 +84,45 @@
     <!-- FEATURES SECTION -->
     <section class="bg-light" id="features">
         <div class="container py-5">
-            <h2><i class="bi bi-gear"></i> <span data-translate="features"></span></h2>
+            <h2><i class="bi bi-gear"></i>Fonctionnalités</h2>
             <hr/>
             <br>
             <div class="row text-center">
                 <div class="col-md-3 col-sm-6 text-primary">
                     <img src="icons/scan.svg" style="width: 50px;color: green">
-                    <h4 class="pt-3" data-translate="features_barcode"></h4>
+                    <h4 class="pt-3">Scanne les QR Codes et les codes barres</h4>
                 </div>
                 <div class="col-md-3 col-sm-6 text-primary">
                     <img src="icons/text-recognition.svg" style="width: 50px;color: green">
-                    <h4 class="pt-3" data-translate="features_text_recognition"></h4>
+                    <h4 class="pt-3" >Reconnaissance de textes</h4>
                 </div>
                 <div class="col-md-3 col-sm-6 text-primary">
                     <img src="icons/object-recognition.svg" style="width: 50px;color: green">
-                    <h4 class="pt-3" data-translate="features_object_recognition"></h4>
+                    <h4 class="pt-3">Reconnaissance d'objets</h4>
                 </div>
                 <div class="col-md-3 col-sm-6 text-primary">
                     <img src="icons/computer.svg" style="width: 50px;color: green">
-                    <h4 class="pt-3" data-translate="features_send"></h4>
+                    <h4 class="pt-3">Envoie tous types de fichiers directement sur votre ordinateur</h4>
                 </div>
             </div>
+        </div>
+
+    </section>
+
+    <section class="bg-primary text-white py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h3><b>CopyPasta</b> extrait les adresses mail et les URLS des scans de texte pour vous offrir une experience optimale</h3>
+                </div>
+                <video muted loop class="col-md-5 rounded" autoplay>
+                    <source src="presentation.mp4"
+                            type="video/mp4">
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+            </div>
+            
+                
         </div>
 
     </section>
@@ -97,18 +130,18 @@
     <!-- HOW TO USE SECTION -->
     <section class="bg-white">
         <div class="container py-5">
-            <h2 id="howtouse"><i class="bi bi-question-circle"></i> <span data-translate="how_to_use"></h2>
+            <h2 id="howtouse"><i class="bi bi-question-circle"></i>Comment ça marche ?</h2>
             <hr/>
-            <p data-translate="how_to_use_description"></p>
+            <p>Pour utiliser cette applications, vous devez suivre ces instruction simples :</p>
             <ul>
-                <li data-translate="how_to_use_step_one"></li>
-                <li data-translate="how_to_use_step_two"></li>
-                <li data-translate="how_to_use_step_three"></li>
-                <li data-translate="how_to_use_step_four"></li>
+                <li>Téléchargez l'application mobile et le logiciel <a href="#download">ici</a>.</li>
+                <li>Ouvrez le logiciel et l'application mobile.</li>
+                <li>Sur votre téléphone, cliquez sur "Ajouter un appareil" et scannez le QR Code qui apparaît à l'écran de votre ordinateur.</li>
+                <li>C'est fini ! Vous avez juste à sélectionner votre ordinateur sur l'application mobile et vous pouvez dès à présent utiliser CopyPasta !</li>
             </ul>
             <div class="alert alert-info" role="alert">
                 <i class="bi bi-info-circle"></i>
-                <span data-translate="how_to_use_tips"></span>
+                Si vous n'arrivez pas à envoyer vos scans à votre ordinateur, vérifiez bien que votre téléphone soit bien connecté sur le même réseau WiFi que votre ordinateur.</span>
             </div>
         </div>
     </section>
@@ -116,67 +149,60 @@
     <!-- DOWNLOAD SECTION -->
     <section class="bg-dark text-white">
         <div class="container py-5">
-            <h2 id="download"><i class="bi bi-download"></i> <span data-translate="download"></span></h2>
+            <h2 id="download"><i class="bi bi-download"></i>Télécharger</h2>
             <div class="row text-center">
                 <div class="col-md-6 mt-4">
-                    <p class="text-center" data-translate="download_windows_title"></p>
-                    <a href="https://github.com/CopyPastaOfficial/CopyPasta/releases/latest/download/copypasta_installer.exe" class="btn btn-primary"><i class="bi bi-download"></i> <span data-translate="download_windows_button"></span></a>
+                    <p class="text-center">Vous pouvez télécharger le logiciel ici :</p>
+                    <a href="https://github.com/CopyPastaOfficial/CopyPasta/releases/latest/download/copypasta.exe" class="btn btn-primary"><i class="bi bi-download"></i><span>Télécharger pour Windows</span></a>
                 </div>
                 <div class="col-md-6 mt-4">
-                    <p class="text-center" data-translate="download_android_title"></p>
+                    <p class="text-center">Vous pouvez télécharger l'application Android ici :</p>
                     <a id="link-android-download" href="https://play.google.com/store/apps/details?id=fr.unrealsoftwares.copypasta&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img height="70px" id="google-play" alt='Get it on Google Play' /></a>
                 </div>
             </div>
         </div>
-
-        </div>
     </section>
     <!-- DOWNLOAD SECTION end -->
+
+    <!-- SCREENSHOTS SECTON -->
+    <section class="container py-5">
+        <h2 id="screenshots" class="mt-3"><i class="bi bi-info-circle"></i>Screenshots</h2>
+        <hr/>
+        <div class="row">
+            <img src="screenshots/software-1.png" alt="" class="col-md-6">
+            <img src="screenshots/software-2.png" alt="" class="col-md-6">
+        </div>
+        <div class="row mt-3">
+            <img src="screenshots/app-1.png" alt="" class="col-md-4">
+            <img src="screenshots/app-2.png" alt="" class="col-md-4">
+            <img src="screenshots/app-3.png" alt="" class="col-md-4">
+        </div>
+    </section>
+    <!-- SCREENSHOTS SECTON end -->
+
     <!-- ABOUT SECTION -->
     <section class="container py-5">
-        <h2 id="about" class="mt-3"><i class="bi bi-info-circle"></i> <span data-translate="about"></span></h2>
+        <h2 id="about" class="mt-3"><i class="bi bi-info-circle"></i>À propos</h2>
         <hr/>
-        <p data-translate="about_content"></p>
+        <p>Nous sommes deux développeurs français.</p>
     </section>
     <!-- ABOUT SECTION end -->
 
+    
+
     <!-- FOOTER -->
-    <footer class="bg-light py-5">
+    <footer class="bg-dark text-white py-5">
         <div class="container">
-            <p data-translate="footer"></p>
+            <p>Ce site est hebergé par <a href="https://github.com" class="link-light">Github</a>. Le thème et les icones utilisés sur ce site ont été fait par <a href="https://getbootstrap.com" class="link-light">Bootstrap</a>. Google Play et le logo Google Play sont des marques de Google LLC.</p>
         </div>
     </footer>
     <!-- END FOOTER -->
-    <script src="translations/fr.js"></script>
-    <script src="translations/en.js"></script>
-    <script src="translations/es.js"></script>
-    <script src="translations/de.js"></script>
-    <script src="translate.js"></script>
     <script>
-        Translate([
-            {
-                lang: ["fr-FR", "fr-BE", "fr-CA", "fr-CH", "fr", "fr-LU", "fr-MC"],
-                trans: fr
-            },
-            {
-                lang: ["en", "en-AU", "en-BZ", "en-CA", "en-CB", "en-GB", "en-IE", "en-JM", "en-NZ", "en-PH", "en-TT", "en-US", "en-ZA", "en-ZW"],
-                trans: en
-            },
-            {
-                lang: ["es", "es-AR", "es-BO", "es-CL", "es-CO", "es-CR", "es-DO", "es-CE", "es-ES", "es-GT", "es-HN", "es-MX", "es-NI", "es-PA", "es-PE", "es-PR", "es-PY", "es-SV", "es-UY", "es-VE"],
-                trans: es
-            },
-            {
-                lang: ["de", "de-AT", "de-CH", "de-DE", "de-LI", "de-LU"],
-                trans: de
-            }
-        ], "en")
-
         document.getElementById("google-play").setAttribute("src","https://play.google.com/intl/" + navigator.language.replace("-","_") +"/badges/static/images/badges/" + navigator.language.substr(0,2) + "_badge_web_generic.png")
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="bootstrap.bundle.min.js"></script>
 
     <style>
         .btn-primary {
@@ -195,7 +221,31 @@
             margin: -90px 0 0;
             /* negative fixed header height */
         }
+
+
+        .goog-te-banner-frame.skiptranslate {
+        display: none !important;
+        } 
+        .bi::after {
+            content: " ";
+        }
     </style>
+
+
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'fr'}, 'google_translate_element');
+    }
+</script>
+
+
+<script>
+
+
+</script>
+
+
+
 </body>
 
 </html>
